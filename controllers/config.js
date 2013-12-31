@@ -8,7 +8,19 @@ EatInApp.config(function($stateProvider, $urlRouterProvider) {
 //	search state is default view
 	.state('search', {
 		url: '/search',
-		templateUrl: 'views/search.html'
+		templateUrl: 'views/search.html',
+		controller: function ($scope) {
+//			$scope.keyword = [];
+//			if ($scope.include = '') {
+//				$scope.include = []
+//			};
+//			if ($scope.exclude = '') {
+//				$scope.exclude = []
+//			};
+			$scope.keyword = [];
+			$scope.include = '';
+			$scope.exclude = '';
+		}
 	})
 // navigates to About view
 	.state('about', {
@@ -67,20 +79,29 @@ EatInApp.config(function($stateProvider, $urlRouterProvider) {
 //	       		'&excludedIngredient[]=' + $scope.exclude + 
 //	       		'&requirePictures=true&callback=JSON_CALLBACK').
 
-// 			TEST CODE
+//---------------------TEST CODE-----------------------
 
-// *** PROBLEM WITH API CALL RESULTS FROM blank field for allowedIngredient and/or q
-// If parameters removed from API call, then search will go through
+// *** PROBLEM WITH API CALL RESULTS FROM blank field for allowedIngredient and/or q.
+// If parameters removed from API call, then search will go through.
 // Can't have either 'undefined'?
 // Need to have conditional which excludes parameters if field is blank
-
+			
+//			if ($scope.include = '') {
+//				$scope.include = [];
+//			};
+//			if ($scope.exclude = '') {
+//				$scope.exclude = [];
+//			};
+			
 	       	$http.jsonp('http://api.yummly.com/v1/api/recipes?_app_id=' + 
 	       		$scope.appId + '&_app_key=' + $scope.apiKey + 
 	       		'&q=' + $scope.keyword +
-	       		'&noUserSettings=true' + 
-//	       		'&allowedIngredient=' + $scope.include +
+//	       		'&noUserSettings=true' + 
+	       		'&allowedIngredient[]=' + $scope.include +
 	       		'&excludedIngredient[]=' + $scope.exclude + 
 	       		'&requirePictures=true&callback=JSON_CALLBACK').
+
+//---------------------END TEST------------------------
 	       		
         	//if successful return, parse data
 	        success(function(data) {
@@ -92,7 +113,7 @@ EatInApp.config(function($stateProvider, $urlRouterProvider) {
 	    		console.log(data);
 	        }). // success
 	    	error(function(error) {
-				alert('Please check your search terms and try again')
+				alert('Please check your search terms and try again');
 			}); // error
 		} 
 	})
