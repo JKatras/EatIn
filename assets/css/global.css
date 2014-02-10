@@ -8,7 +8,7 @@
 	src: url(../fonts/Arial Rounded Bold.ttf);
 }
 body {
-	background: url(../img/bamboo-cutting-board.jpg) no-repeat center -10px;
+	background: url(../img/bamboo-cutting-board.jpg) /*no-repeat*/ center -10px;
 	background-position: 50% -10px;
 }
 body p, label {
@@ -46,14 +46,20 @@ body label {
 .col-left {
 	border-radius: 4px;
 }
-
+header h1 {
+	display: inline-block;
+	
+}
 nav ul {
 	padding-left: 0px;
 }
 nav ul li {
 	display: inline-block;
 }
-.nav-right {
+/*.nav-right {
+	float: right;
+}*/
+nav {
 	float: right;
 }
 #ingredient-list {

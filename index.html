@@ -15,26 +15,34 @@
 
 <body>
 	<div class="container">
-		<nav>
-			<ul>
-				<li id="logo">
+		<!--<nav>-->
+		<header>
+			<!--<ul>-->
+				<!--<li id="logo">-->
+				<h1 id="logo">
 					<a ui-sref="search">
 						<img src="assets/img/EatIn_logo_166x81.png" alt="EatIn Logo" />
 					</a>
-				</li>
-				<!--<div class="nav-right">-->
-				<li class="nav-right">
-					<a ui-sref="about"><span class="glyphicon glyphicon-question-sign"></span></a>
-				</li>
-				<li class="nav-right">
-					<a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span></a>
-				</li>
-				<li class="nav-right">
-					<a ui-sref="search"><span class="glyphicon glyphicon-search"></span></a>
-				</li>
-				<!--</div>-->
-			</ul>
-		</nav>
+				</h1>
+				<!--</li>-->
+			<nav>
+				<ul>
+					<li>
+					<!--<li class="nav-right">-->
+						<a ui-sref="about"><span class="glyphicon glyphicon-question-sign"></span></a>
+					</li>
+					<li>
+					<!--<li class="nav-right">-->
+						<a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span></a>
+					</li>
+					<li>
+					<!--<li class="nav-right">-->
+						<a ui-sref="search"><span class="glyphicon glyphicon-search"></span></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--</nav>-->
 		
 	<!--This div will contain views assigned by controllers-->
 		<div ui-view></div>
