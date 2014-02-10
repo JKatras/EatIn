@@ -48,7 +48,7 @@ body label {
 }
 header h1 {
 	display: inline-block;
-	
+	float: left;
 }
 nav ul {
 	padding-left: 0px;
