@@ -8,8 +8,8 @@ EatInApp.config(function($stateProvider, $urlRouterProvider) {
 //	search state is default view
 	.state('search', {
 		url: '/search',
-		templateUrl: 'views/search.html',
-		controller: function ($scope) {
+		templateUrl: 'views/search.html'
+//		controller: function ($scope) {
 //			$scope.keyword = [];
 //			if ($scope.include = '') {
 //				$scope.include = []
@@ -17,10 +17,10 @@ EatInApp.config(function($stateProvider, $urlRouterProvider) {
 //			if ($scope.exclude = '') {
 //				$scope.exclude = []
 //			};
-			$scope.keyword = [];
-			$scope.include = '';
-			$scope.exclude = '';
-		}
+//			$scope.keyword = [];
+//			$scope.include = '';
+//			$scope.exclude = '';
+//		}
 	})
 // navigates to About view
 	.state('about', {
