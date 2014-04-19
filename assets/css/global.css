@@ -28,6 +28,12 @@ body label {
 	font-family: Couture;
 	color: #5fad87;
 }
+/*.ui-view {
+	display: inline-block;
+}*/
+.ui-view h2 {
+	margin-top: 10px;
+}
 #detail-result .form-group>img {
 	margin-left: auto;
 	margin-right: auto;
@@ -46,9 +52,15 @@ body label {
 .col-left {
 	border-radius: 4px;
 }
-header h1 {
+nav h1 {
+	float: left;
+}
+/*header h1 {
 	display: inline-block;
 	float: left;
+}*/
+#logo {
+	margin-top: 0px;
 }
 nav ul {
 	padding-left: 0px;
@@ -56,12 +68,12 @@ nav ul {
 nav ul li {
 	display: inline-block;
 }
-/*.nav-right {
-	float: right;
-}*/
-nav {
+.nav-right {
 	float: right;
 }
+/*nav {
+	float: right;
+}*/
 #ingredient-list {
 	color: black;
 }
@@ -227,15 +239,22 @@ user-select: none;
 		padding: 0px;
 	
 	}
-	#logo {
+	/*ul li #logo {
+		width: 30%;
+	}*/
+	nav ul li:first-child {
 		width: 30%;
 	}
 	#logo img {
 		width: 100%;
 	}
-
+	.container ul {
+		margin-top: 5px;
+	}
 	.nav-right {
 		margin-top: -5px;
+		line-height: 70%;
+		/*height: 80%;*/
 	}
 	#btn-group {
 		text-align: left;

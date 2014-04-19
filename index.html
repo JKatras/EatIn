@@ -15,37 +15,38 @@
 
 <body>
 	<div class="container">
-		<!--<nav>-->
-		<header>
-			<!--<ul>-->
-				<!--<li id="logo">-->
+	<!--<header>-->
+		<nav>
+		
+			<ul>
+				<li>
 				<h1 id="logo">
 					<a ui-sref="search">
 						<img src="assets/img/EatIn_logo_166x81.png" alt="EatIn Logo" />
 					</a>
 				</h1>
-				<!--</li>-->
-			<nav>
-				<ul>
-					<li>
-					<!--<li class="nav-right">-->
-						<a ui-sref="about"><span class="glyphicon glyphicon-question-sign"></span></a>
-					</li>
-					<li>
-					<!--<li class="nav-right">-->
-						<a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span></a>
-					</li>
-					<li>
-					<!--<li class="nav-right">-->
-						<a ui-sref="search"><span class="glyphicon glyphicon-search"></span></a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<!--</nav>-->
+				</li>
+			<!--<nav>-->
+				<!--<ul>-->
+					<!--<li>-->
+				<li class="nav-right">
+					<a ui-sref="about"><span class="glyphicon glyphicon-question-sign"></span></a>
+				</li>
+				<!--<li>-->
+				<li class="nav-right">
+					<a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span></a>
+				</li>
+				<!--<li>-->
+				<li class="nav-right">
+					<a ui-sref="search"><span class="glyphicon glyphicon-search"></span></a>
+				</li>
+			</ul>
+			<!--</nav>-->
 		
+		</nav>
+	<!--</header>-->
 	<!--This div will contain views assigned by controllers-->
-		<div ui-view></div>
+		<div class="ui-view"></div>
 		
 	</div>
 <!--Scripts placed at end of body for faster app load time-->
