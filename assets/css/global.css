@@ -259,9 +259,6 @@ user-select: none;
 		padding: 0px;
 	
 	}
-	/*ul li #logo {
-		width: 30%;
-	}*/
 	nav ul li:first-child {
 		width: 25%;
 	}
@@ -274,7 +271,6 @@ user-select: none;
 	.nav-right {
 		margin-top: -5px;
 		line-height: 70%;
-		/*height: 80%;*/
 	}
 	#btn-group {
 		text-align: left;
