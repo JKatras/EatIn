@@ -17,6 +17,9 @@ body p, label {
 body label {
 	font-weight: normal;
 }
+/*.container {
+	min-width: 400px;
+}*/
 .container input:not([type=checkbox]) {
 	width: 100%;
 }
@@ -209,16 +212,17 @@ user-select: none;
 	.form-group {
 		padding: 0px;
 	}
+	
 	.container h1, h2, form > legend {
 	font-size: 18px;
 	font-family: Couture;
 	color: #5fad87;
 	}
 	nav .glyphicon {
-	font-size: 25px;
+	font-size: 20px;
 	}
 	.input-lg {
-		height: 30px;
+		height: 35px;
 		font-size: 14px;
 	}
 	.btn-green {
