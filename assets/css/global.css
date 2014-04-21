@@ -215,6 +215,9 @@ user-select: none;
 	#searchform .btn-green {
 		margin-top: 3px;
 	}
+	#ingredient-list {
+		padding-left: 5px;
+	}
 	.form-group {
 		padding: 0px;
 	}
