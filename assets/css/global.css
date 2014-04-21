@@ -212,17 +212,21 @@ user-select: none;
 	.form-group {
 		padding: 0px;
 	}
-	
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 	.container h1, h2, form > legend {
-	font-size: 18px;
-	font-family: Couture;
-	color: #5fad87;
+		font-size: 18px;
+		font-family: Couture;
+		color: #5fad87;
 	}
 	nav .glyphicon {
-	font-size: 20px;
+		font-size: 20px;
 	}
+	
 	.input-lg {
-		height: 35px;
+		height: 40px;
 		font-size: 14px;
 	}
 	.btn-green {
