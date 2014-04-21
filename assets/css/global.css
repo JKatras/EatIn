@@ -209,6 +209,12 @@ user-select: none;
 }
 /*Settings for screens less than 400 pixels wide*/
 @media (max-width: 400px){
+	nav ul li h1 {
+		margin-bottom: 5px;
+	}
+	#searchform .btn-green {
+		margin-top: 3px;
+	}
 	.form-group {
 		padding: 0px;
 	}
@@ -224,7 +230,10 @@ user-select: none;
 	nav .glyphicon {
 		font-size: 20px;
 	}
-	
+	.row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
 	.input-lg {
 		height: 40px;
 		font-size: 14px;
@@ -251,7 +260,7 @@ user-select: none;
 		width: 30%;
 	}*/
 	nav ul li:first-child {
-		width: 30%;
+		width: 25%;
 	}
 	#logo img {
 		width: 100%;
