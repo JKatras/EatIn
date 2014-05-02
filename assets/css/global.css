@@ -74,9 +74,9 @@ nav ul li {
 .nav-right {
 	float: right;
 }
-/*nav {
-	float: right;
-}*/
+nav {
+	display: inline;
+}
 #ingredient-list {
 	color: black;
 }
