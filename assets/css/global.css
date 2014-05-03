@@ -17,9 +17,6 @@ body p, label {
 body label {
 	font-weight: normal;
 }
-/*.container {
-	min-width: 400px;
-}*/
 .container input:not([type=checkbox]) {
 	width: 100%;
 }
@@ -31,9 +28,6 @@ body label {
 	font-family: Couture;
 	color: #5fad87;
 }
-/*.ui-view {
-	display: inline-block;
-}*/
 .ui-view h2 {
 	margin-top: 10px;
 }
@@ -58,10 +52,6 @@ body label {
 nav h1 {
 	float: left;
 }
-/*header h1 {
-	display: inline-block;
-	float: left;
-}*/
 #logo {
 	margin-top: 0px;
 }
@@ -275,7 +265,6 @@ user-select: none;
 	#btn-group {
 		text-align: left;
 	}
-	
 	#ingredient-list ul {
 		padding-left: 0px;
 		

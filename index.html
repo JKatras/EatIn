@@ -2,22 +2,17 @@
 <html ng-app = "EatInApp">
 <head>
 	<title>EatIn | What's Cooking?</title>
-	
 	<!--Meta tag which matches page width to device screen width-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<!--Twitter Bootstrap linkage-->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css"/>
-	
 	<!--Global css file for Bootstrap overrides and/or enhancements-->
 	<link rel="stylesheet" href="assets/css/global.css"/>
 </head>
 
 <body>
 	<div class="container">
-	<!--<header>-->
 		<nav>
-		
 			<ul>
 				<li>
 				<h1 id="logo">
@@ -26,28 +21,20 @@
 					</a>
 				</h1>
 				</li>
-			<!--<nav>-->
-				<!--<ul>-->
-					<!--<li>-->
 				<li class="nav-right">
 					<a ui-sref="about"><span class="glyphicon glyphicon-question-sign"></span></a>
 				</li>
-				<!--<li>-->
 				<li class="nav-right">
 					<a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span></a>
 				</li>
-				<!--<li>-->
+
 				<li class="nav-right">
 					<a ui-sref="search"><span class="glyphicon glyphicon-search"></span></a>
 				</li>
-			</ul>
-			<!--</nav>-->
-		
+			</ul>		
 		</nav>
-	<!--</header>-->
 	<!--This div will contain views assigned by controllers-->
 		<div class="ui-view"></div>
-		
 	</div>
 <!--Scripts placed at end of body for faster app load time-->
 
