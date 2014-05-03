@@ -1,11 +1,11 @@
 /*Custom fonts linked in /assets/fonts*/
 @font-face {
 	font-family: Couture;
-	src: url(../fonts/COUTURE-Bold.ttf);
+	src: url(../fonts/COUTURE-Bold.ttf) format('truetype') /*IE fix?*/;
 }
 @font-face {
 	font-family: "Arial Rounded Bold";
-	src: url(../fonts/Arial Rounded Bold.ttf);
+	src: url(../fonts/Arial Rounded Bold.ttf) format('truetype');
 }
 body {
 	background: url(../img/bamboo-cutting-board.jpg) /*no-repeat*/ center -10px;
