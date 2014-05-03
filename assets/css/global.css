@@ -8,7 +8,7 @@
 	src: url(../fonts/Arial Rounded Bold.ttf) format('truetype');
 }
 body {
-	background: url(../img/bamboo-cutting-board.jpg) /*no-repeat*/ center -10px;
+	background: url(../img/bamboo-cutting-board.jpg) center -10px;
 	background-position: 50% -10px;
 }
 body p, label {
@@ -16,6 +16,9 @@ body p, label {
 }
 body label {
 	font-weight: normal;
+}
+#detail-result p, #detail-result label {
+	color: #000;
 }
 .container input:not([type=checkbox]) {
 	width: 100%;
@@ -40,7 +43,7 @@ body label {
 	text-align: center;
 }
 #about {
-	color: #252525;
+	color: #000;
 }
 #about a {
 	text-decoration: none;
@@ -75,11 +78,17 @@ nav {
 	color: black;
 }
 #prep-list {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	text-align: center;
+}
+#prep-list ul, #prep-list h4:first-child {
+	margin-top: 0px;
 }
 #prep-list li {
 	margin: 5px auto;
+}
+#prep-list a.btn-green {
+	margin-top: 0px;
 }
 #attribution {
 	text-align: center;
@@ -95,15 +104,19 @@ form legend {
 }
 #detail-result img{
 	max-width: 100%;
+	border: 1px solid #fff;
 }
 #list-container {
 	margin-left: auto;
 	margin-right: auto;
 }
+#list-container img {
+	border: 1px solid #fff;
+}
 #list-container h3, h4, h5 {
 	font-family: "Arial Rounded Bold", Arial;
 	text-decoration: none;
-	color: #252525;
+	color: #000;
 }
 #searchform {
 	background: none;
@@ -142,7 +155,7 @@ form legend {
 	font-family: "Arial Rounded Bold", Arial, Helvetica, sans-serif;
 }
 #btn-fav .glyphicon{
-	color: #fc7647;
+	color: #5fad87;
 }
 #btn-signup {
 	margin-top: 0px;
@@ -199,6 +212,9 @@ user-select: none;
 #ingredient-list h3{
 		margin-top: 0px;
 }
+#ingredient-list ul {
+	margin-top: 0px;
+}
 /*Settings for screens less than 400 pixels wide*/
 @media (max-width: 400px){
 	nav ul li h1 {
@@ -239,7 +255,7 @@ user-select: none;
 		font-size: 14px;
 	}
 	#list-container h4, #detail-result h4, #about h4 {
-		color: #252525;
+		color: #000;
 		font-size: 14px;
 	}
 	#list-container h3, #detail-result h3, #about h3 {
