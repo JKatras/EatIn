@@ -45,6 +45,9 @@ body label {
 #about {
 	color: #000;
 }
+#about p {
+	margin: -10px 0 0;
+}
 #about a {
 	text-decoration: none;
 	color: black;
