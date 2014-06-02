@@ -105,22 +105,61 @@
 //--------------------------TEST CODE----------------------------------
 var app = angular.module('EatInApp', []);
 
-app.controller('ListCtrl', function ($scope, $http) {
-	$scope.appId = '4606347e';
-	$scope.apiKey = '2b0dc330fcebb3d65bdddc74aae878b3';
-	$scope.results = [];
-	$http.jsonp('http://api.yummly.com/v1/api/recipes?_app_id=' + 
-   		$scope.appId + '&_app_key=' + $scope.apiKey + 
-   		'&q=' + $scope.keyword + 
-   		'&allowedIngredient[]=' + $scope.include +
-   		'&excludedIngredient[]=' + $scope.exclude + 
-   		'&requirePictures=true&callback=JSON_CALLBACK').
-    success(function(data) {
-    	angular.forEach(data.matches, function(recipe, index) {
-    		$scope.results.push(recipe);
-		});
-    }).
-	error(function(error) {
-		alert('Please check your search terms and try again');
-	});
+app.directive('searchForm', function() {
+	return {
+		restrict: 'A',
+		templateUrl: 'views/search.html',
+		controller: function ($scope, $http) {
+			$scope.appId = '4606347e';
+			$scope.apiKey = '2b0dc330fcebb3d65bdddc74aae878b3';
+			$scope.results = [];
+//			$scope.runSearch = function(){
+				$http.jsonp('http://api.yummly.com/v1/api/recipes?_app_id=' + 
+			   		$scope.appId + '&_app_key=' + $scope.apiKey + 
+			   		'&q=' + $scope.keyword + 
+			   		'&allowedIngredient[]=' + $scope.include +
+			   		'&excludedIngredient[]=' + $scope.exclude + 
+			   		'&requirePictures=true&callback=JSON_CALLBACK').
+			    success(function(data) {
+			    	angular.forEach(data.matches, function(recipe, index) {
+			    		$scope.results.push(recipe);
+					});
+					console.log($scope.results);
+			    }).
+				error(function(error) {
+					alert('Please check your search terms and try again');
+				});
+//			}
+		},
+		controllerAs: 'run'
+	};
+});
+
+app.directive('searchResults', function(){
+	return {
+		restrict: 'A',
+		templateUrl: 'views/search-results.html'
+//		controller: function ($scope, $http) {
+//			$scope.appId = '4606347e';
+//			$scope.apiKey = '2b0dc330fcebb3d65bdddc74aae878b3';
+//			$scope.results = [];
+//			$scope.runSearch = function(){
+//				$http.jsonp('http://api.yummly.com/v1/api/recipes?_app_id=' + 
+//			   		$scope.appId + '&_app_key=' + $scope.apiKey + 
+//			   		'&q=' + $scope.keyword + 
+//			   		'&allowedIngredient[]=' + $scope.include +
+//			   		'&excludedIngredient[]=' + $scope.exclude + 
+//			   		'&requirePictures=true&callback=JSON_CALLBACK').
+//			    success(function(data) {
+//			    	angular.forEach(data.matches, function(recipe, index) {
+//			    		$scope.results.push(recipe);
+//					});
+//			    }).
+//				error(function(error) {
+//					alert('Please check your search terms and try again');
+//				});
+//			}
+//		},
+//		controllerAs: 'list'
+	};
 });
